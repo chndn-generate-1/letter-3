@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap"
+      rel="stylesheet"
+    />
+    <title>Love</title>
+    <style>
+      @media only screen and (min-aspect-ratio: 2/3) {
+        html {
+          display: none;
+        }
+      }
+      .backgroundImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: url("pic1.jpg"), black;
+        background-blend-mode: hard-light;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: cover;
+        filter: blur(8px) saturate(150%);
+        box-shadow: 0 0 2px inset white, 0 0 3px inset pink, 0 0 5px inset pink,
+          0 0 8px inset pink, 0 0 12px inset red;
+        z-index: -10;
+      }
+      .bi-heart-fill {
+        color: pink;
+        filter: drop-shadow(0 0 6px black);
+      }
+      .containerWrapper {
+        height: 98vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      .container {
+        position: relative;
+        width: 100%;
+        font-family: "Babylonica", cursive;
+        font-size: 3rem;
+        color: white;
+        text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 5px black,
+          0 0 8px black, 0 0 12px black, 0 0 16px black, 0 0 18px black,
+          0 0 20px black, 0 0 22px black, 0 0 24px black, 0 0 32px black;
+        text-align: center;
+      }
+      .container li{
+        list-style: none;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="backgroundImage"></div>
+    <div class="containerWrapper">
+      <ul class="container">
+        <li class="letterLine">I want to fight with you.</li>
+        <li class="letterLine">Because you are the</li>
+        <li class="letterLine">important one for me</li>
+        <li class="letterLine">
+          Stay with me
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-heart-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+            />
+          </svg>
+        </li>
+        <li>Love You Sweet heart</li>
+      </ul>
+    </div>
+  </body>
+</html>
